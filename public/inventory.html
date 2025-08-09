@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>QuestStream — Inventory</title>
+  <link rel="stylesheet" href="./css/base.css"/>
+  <link rel="stylesheet" href="./css/layout.css"/>
+  <link rel="stylesheet" href="./css/components.css"/>
+</head>
+<body data-page="inventory">
+  <header class="header">
+    <nav class="nav container">
+      <div class="brand">★ QuestStream</div>
+      <a class="button secondary" href="./index.html">Home</a>
+    </nav>
+  </header>
+  <main class="container main">
+    <section class="card">
+      <h1>Your Artifacts</h1>
+      <p>Collect all pieces to assemble the Case File.</p>
+      <div id="artifact-grid" class="grid cols-3"></div>
+      <button id="assemble" class="button visually-hidden" style="margin-top:12px">Assemble Case File</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;padding:10px 0">
+      <div>Keep going—only a few pieces left.</div>
+      <a class="button" href="./episode.html?ep=ep1" data-next>Back to Episodes</a>
+    </div>
+  </footer>
+  <script type="module" src="./js/artifacts.js"></script>
+</body>
+</html>
