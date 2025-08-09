@@ -1,0 +1,10 @@
+{
+  "episodes": [
+    {"id":"ep1","title":"Episode 1: The Hook","durationMin":6,"poster":"assets/images/ep1.svg","videoId":"M7lc1UVf-VE"},
+    {"id":"ep2","title":"Episode 2: The Twist","durationMin":6,"poster":"assets/images/ep2.svg","videoId":"M7lc1UVf-VE"},
+    {"id":"ep3","title":"Episode 3: The Reveal","durationMin":6,"poster":"assets/images/ep3.svg","videoId":"M7lc1UVf-VE"},
+    {"id":"ep4","title":"Episode 4: The Stakes","durationMin":8,"poster":"assets/images/ep4.svg","videoId":"M7lc1UVf-VE"},
+    {"id":"ep5","title":"Episode 5: The Showdown","durationMin":8,"poster":"assets/images/ep5.svg","videoId":"M7lc1UVf-VE"},
+    {"id":"ep6","title":"Episode 6: The Finale","durationMin":8,"poster":"assets/images/ep6.svg","videoId":"M7lc1UVf-VE"}
+  ]
+}
