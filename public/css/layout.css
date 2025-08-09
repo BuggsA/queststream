@@ -1,0 +1,24 @@
+.header{
+  position:sticky;top:0;z-index:40;
+  backdrop-filter:saturate(1.1) blur(8px);
+  background-color:rgba(255,255,255,.8);
+  border-bottom:1px solid var(--border);
+}
+.nav{display:flex;gap:12px;align-items:center;padding:10px 16px}
+.nav .brand{display:flex;gap:8px;align-items:center;font-weight:600}
+.grid{display:grid;gap:16px}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.grid.cols-4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:12px}
+.footer{
+  position:sticky;bottom:0;z-index:40;
+  background-color:rgba(255,255,255,.9);
+  border-top:1px solid var(--border);
+}
+.progress-rail{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;align-items:center}
+.progress-dot{height:8px;border-radius:999px;background:#e5e7eb}
+.progress-dot.active{background:var(--brand)}
+.main{padding:16px 0}
+.two-col{display:grid;gap:16px;grid-template-columns:1.2fr .8fr}
+@media(max-width:900px){.two-col{grid-template-columns:1fr} .grid.cols-3{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.grid.cols-3{grid-template-columns:1fr}}
