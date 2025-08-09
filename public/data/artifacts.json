@@ -1,0 +1,17 @@
+{
+  "sets": [
+    {
+      "id": "SET_A",
+      "name": "Case File A",
+      "pieces": [
+        {"id":"A1","name":"Corner 1","img":"assets/artifacts/piece1.svg"},
+        {"id":"A2","name":"Corner 2","img":"assets/artifacts/piece2.svg"},
+        {"id":"A3","name":"Side 1","img":"assets/artifacts/piece3.svg"},
+        {"id":"A4","name":"Side 2","img":"assets/artifacts/piece4.svg"},
+        {"id":"A5","name":"Center 1","img":"assets/artifacts/piece5.svg"},
+        {"id":"A6","name":"Center 2","img":"assets/artifacts/piece6.svg"}
+      ],
+      "assemblyHint": "Collect all 6 to unlock the Case File background image."
+    }
+  ]
+}
