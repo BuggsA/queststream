@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>QuestStream — Home</title>
+  <link rel="stylesheet" href="./css/base.css"/>
+  <link rel="stylesheet" href="./css/layout.css"/>
+  <link rel="stylesheet" href="./css/components.css"/>
+  <link rel="manifest" href="./manifest.json"/>
+</head>
+<body data-page="home">
+  <header class="header">
+    <nav class="nav container">
+      <div class="brand">★ QuestStream</div>
+      <a class="button secondary" href="./inventory.html">Inventory</a>
+      <a class="button secondary" href="./events.html">Events</a>
+      <a class="button secondary" href="./profile.html">Profile</a>
+      <input class="input" placeholder="Search episodes..."/>
+    </nav>
+  </header>
+  <main class="container main two-col">
+    <section class="card">
+      <h1>Welcome back</h1>
+      <p>Ready for a 60-minute watch + play session?</p>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button id="continue-btn" class="button">Continue session</button>
+        <a class="button secondary" href="./episode.html?ep=ep1">Start from Ep1</a>
+      </div>
+      <h3 style="margin-top:16px;">Session timeline</h3>
+      <div class="progress-rail" aria-label="Session progress">
+        <div class="progress-dot active"></div>
+        <div class="progress-dot active"></div>
+        <div class="progress-dot active"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+      </div>
+    </section>
+    <aside class="card">
+      <h2>Live Events</h2>
+      <div class="card">
+        <strong>AMA with the Cast</strong>
+        <p>Starts in <span id="countdown">--:--:--</span></p>
+        <button class="button secondary" onclick="alert('We'll remind you here on the site!')">Remind me</button>
+      </div>
+    </aside>
+  </main>
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;padding:10px 0">
+      <div>Tip: Press <span class="kbd">N</span> to jump to the next step.</div>
+      <a class="button" href="./episode.html?ep=ep1" data-next>Continue</a>
+    </div>
+  </footer>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
