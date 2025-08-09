@@ -1,0 +1,10 @@
+{
+  "beats": [
+    {"id":"b1","episodeId":"ep1","type":"quiz","question":"Where should the crew search next?","choices":["The red door","The blue hatch","The hidden vent","Stay put"],"correctIndex":2,"artifactPiece":"A1"},
+    {"id":"b2","episodeId":"ep2","type":"spot","question":"Spot the clue from Episode 2.","choices":["Scuffed floor","Flickering light","Open window","Missing photo"],"correctIndex":0,"artifactPiece":"A2"},
+    {"id":"b3","episodeId":"ep3","type":"choice","question":"Pick the next approach.","choices":["Confront","Observe","Divide","Retreat"],"correctIndex":1,"artifactPiece":"A3"},
+    {"id":"b4","episodeId":"ep4","type":"speed","question":"Solve in 30s: 8, 5, ?, 2 (-3 pattern)","choices":["4","3","5","6"],"correctIndex":1,"artifactPiece":"A4"},
+    {"id":"b5","episodeId":"ep5","type":"vote","question":"Community vote: who to trust?","choices":["Morgan","Avery","Kai","Rin"],"correctIndex":0,"artifactPiece":"A5"},
+    {"id":"b6","episodeId":"ep6","type":"boss","question":"Final check: Which clue mattered most?","choices":["The keycard","The scuffed floor","The blue hatch","The phone log"],"correctIndex":1,"artifactPiece":"A6"}
+  ]
+}
