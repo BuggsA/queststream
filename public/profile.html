@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>QuestStream — Profile</title>
+  <link rel="stylesheet" href="./css/base.css"/>
+  <link rel="stylesheet" hre="./css/layout.css"/>
+  <link rel="stylesheet" href="./css/components.css"/>
+</head>
+<body data-page="profile">
+  <header class="header">
+    <nav class="nav container">
+      <div class="brand">★ QuestStream</div>
+      <a class="button secondary" href="./index.html">Home</a>
+    </nav>
+  </header>
+
+  <main class="container main">
+    <section class="card">
+      <h1>Your Profile</h1>
+      <p>Local-only MVP profile. Export/import will arrive later.</p>
+      <div class="badge">Streak: <span id="streak">0</span> days</div>
+      <div class="badge">Session blocks: <span id="blocks">0</span>/10</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;padding:10px 0">
+      <div>Privacy-friendly: data stays in your browser.</div>
+      <a class="button" href="./index.html">Done</a>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { getSession } from './js/storage.js';
+    const s = getSession();
+    document.getElementById('streak').textContent = s.streakDays || 0;
+    document.getElementById('blocks').textContent = s.sessionBlocks || 0;
+  </script>
+</body>
+</html>
