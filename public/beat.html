@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>QuestStream — Beat</title>
+  <link rel="stylesheet" href="./css/base.css"/>
+  <link rel="stylesheet" href="./css/layout.css"/>
+  <link rel="stylesheet" href="./css/components.css"/>
+</head>
+<body data-page="beat">
+  <header class="header">
+    <nav class="nav container">
+      <div class="brand">★ QuestStream</div>
+      <a class="button secondary" href="./index.html">Home</a>
+    </nav>
+  </header>
+  <main class="container main two-col">
+    <section class="card">
+      <h1>Quick Challenge <span class="badge"><span class="timer" id="timer">02:00</span></span></h1>
+      <p id="beat-q">Loading…</p>
+      <div id="choices" class="grid cols-2"></div>
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <button id="submit" class="button">Submit</button>
+        <a id="next-link" class="button secondary visually-hidden" href="#" data-next>Next</a>
+      </div>
+      <p id="result" style="font-weight:600;margin-top:10px"></p>
+    </section>
+    <aside class="card">
+      <h3>Tips</h3>
+      <p>Pick one answer to continue. Your progress saves automatically.</p>
+      <p>Complete all beats to assemble your case file.</p>
+    </aside>
+  </main>
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;padding:10px 0">
+      <div>Need a break? You can come back anytime.</div>
+      <a id="next" class="button secondary visually-hidden" href="#" data-next>Continue</a>
+    </div>
+  </footer>
+  <script type="module" src="./js/beats.js"></script>
+</body>
+</html>
