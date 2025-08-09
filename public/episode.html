@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>QuestStream — Episode</title>
+  <link rel="stylesheet" href="./css/base.css"/>
+  <link rel="stylesheet" href="./css/layout.css"/>
+  <link rel="stylesheet" href="./css/components.css"/>
+</head>
+<body data-page="episode">
+  <header class="header">
+    <nav class="nav container">
+      <div class="brand">★ QuestStream</div>
+      <a class="button secondary" href="./index.html">Home</a>
+      <a class="button secondary" href="./inventory.html">Inventory</a>
+    </nav>
+  </header>
+  <main class="container main">
+    <div class="grid cols-3">
+      <section class="card" style="grid-column: span 2;">
+        <h1 id="ep-title">Episode</h1>
+        <div class="badge">Duration: <span id="ep-duration">--</span></div>
+        <div id="player" class="player" aria-label="Episode player">Video placeholder</div>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <a id="to-beat" class="button" href="#" data-next>Start Beat</a>
+          <a class="button secondary" href="./index.html">Exit</a>
+        </div>
+      </section>
+      <aside class="card">
+        <h3>Chapters</h3>
+        <ul class="list">
+          <li><span>Ep1</span><span>6 min</span></li>
+          <li><span>Ep2</span><span>6 min</span></li>
+          <li><span>Ep3</span><span>6 min</span></li>
+          <li><span>Ep4</span><span>8 min</span></li>
+          <li><span>Ep5</span><span>8 min</span></li>
+          <li><span>Ep6</span><span>8 min</span></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;padding:10px 0">
+      <div>Session timeline</div>
+      <a id="to-beat-2" class="button" href="#" data-next>Continue</a>
+    </div>
+  </footer>
+  <script type="module" src="./js/player.js"></script>
+</body>
+</html>
